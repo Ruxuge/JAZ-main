@@ -1,0 +1,12 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/build
+/.gradle
+
+#IDE ignored files
+.idea/
+
+#non training files
+src/main/java/designpattern
+src/main/java/javachanges
