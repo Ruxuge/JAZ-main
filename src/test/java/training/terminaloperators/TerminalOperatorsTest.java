@@ -38,14 +38,14 @@ public class TerminalOperatorsTest {
             5, List.of("quick", "brown", "jumps"));
 
     private final TerminalOperatorsExercise instance = new TerminalOperatorsExercise();
-
+    //nie dziala
     @Test
     public void addToSetTest() {
         final Set<String> actual = new HashSet<>();
         instance.addToSet(ALPHABET_STREAM, actual);
         assertEquals(ALPHABET_SET, actual);
     }
-
+    //nie dziala
     @Test
     public void addToListInReverseOrderTest() {
         final List<String> actual = new ArrayList<>();
@@ -59,19 +59,19 @@ public class TerminalOperatorsTest {
         final String[] actual = instance.collectToArray(ALPHABET_STREAM);
         assertArrayEquals(ALPHABET_ARRAY, actual);
     }
-
+    //nie dziala
     @Test
     public void collectToSetTest() {
         Set<String> actual = instance.collectToSet(ALPHABET_STREAM);
         assertEquals(ALPHABET_SET, actual);
     }
-
+    //nie dziala
     @Test
     public void collectToListTest() {
         List<String> actual = instance.collectToList(ALPHABET_STREAM);
         assertEquals(ALPHABET_LIST, actual);
     }
-
+    //nie dziala
     @Test
     public void mergeIntoStringTest() {
         final String DELIMITED_ALPHABET = "[A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P-Q-R-S-T-U-V-W-X-Y-Z]";
@@ -86,7 +86,7 @@ public class TerminalOperatorsTest {
         assertEquals(35, charCount);
         assertEquals(0, emptyCharCount);
     }
-
+    //nie dziala
     @Test
     public void longestWordLengthTest() {
         int longestWordLength = instance.longestWordLength(WORD_STREAM);
@@ -94,7 +94,7 @@ public class TerminalOperatorsTest {
         assertEquals(5, longestWordLength);
         assertEquals(0, zeroLength);
     }
-
+    //nie dziala
     @Test
     public void longestWordTest() {
         String longestWord = instance.longestWord(WORD_STREAM);
@@ -102,7 +102,7 @@ public class TerminalOperatorsTest {
         assertEquals("quick", longestWord);
         assertEquals("", emptyStreamLongestWord);
     }
-
+    //nie dziala
     @Test
     public void wordsGroupedByLengthTest() {
         Map<Integer, List<String>> wordsGroupedByLength = instance.wordsGroupedByLength(WORD_STREAM);

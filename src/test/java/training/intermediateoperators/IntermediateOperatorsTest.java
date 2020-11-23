@@ -15,7 +15,7 @@ public class IntermediateOperatorsTest {
 
     private final IntermediateOperatorsExercise instance = new IntermediateOperatorsExercise();
 
-
+    //nie dziala
     @Test
     public void wordsLongerThanFiveCharactersTest() {
         tester(
@@ -55,7 +55,7 @@ public class IntermediateOperatorsTest {
                 s -> s.collect(Collectors.toList())
         );
     }
-
+    //nie dziala
     @Test public void increasingSawtoothTest() {
         tester(
                 instance,

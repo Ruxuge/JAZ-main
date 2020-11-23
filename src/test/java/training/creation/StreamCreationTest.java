@@ -52,7 +52,7 @@ public class StreamCreationTest {
                 s -> s.boxed().collect(Collectors.toList())
         );
     }
-
+    //nie dziala
     @Test
     public void from0to1withStepTest() {
         tester(
@@ -62,7 +62,7 @@ public class StreamCreationTest {
                 s -> s.boxed().collect(Collectors.toList())
         );
     }
-
+    //nie dziala
     @Test
     public void alphabetTest() {
         tester(
